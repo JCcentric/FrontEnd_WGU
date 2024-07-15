@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     transition: all 4s linear;
-    animation: bganimate 11s linear infinite;
+    animation: bganimate 11s ease-in-out infinite;
 }
 
 .container{
@@ -101,11 +101,11 @@ body {
 }
 
 .image_slider {
-    width: 440px;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translateY(150%);
+    width: 20%;
+    position: relative;
+    top: -50%;
+    right: -85%;
+    transform: translateY(250%);
     padding: 20px;
     overflow: hidden;
 }
@@ -162,14 +162,17 @@ body {
     0%{
         background-image: url(Assets/nc1.jpg);
     }
-    25%{
+    20%{
         background-image: url(Assets/nc1.jpg);
     }
-    50%{
+    40%{
         background-image: url(Assets/nc2.jpeg);
     }
-    75%{
+    60%{
         background-image: url(Assets/nc2.jpeg);
+    }
+    80%{
+        background-image: url(Assets/nc3.jpeg);
     }
     100%{
         background-image: url(Assets/nc3.jpeg);
